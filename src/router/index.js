@@ -97,13 +97,13 @@ export default new Router({
             title:'ddddd'
           }
         },
-        {
-          path:'*',
-          name:'NotFound',
-          component:NotFound
-        }
+        
       ]
     },
-    
+    {
+      path:'*',
+      name:'NotFound',
+      component:NotFound
+    }
   ]
 })

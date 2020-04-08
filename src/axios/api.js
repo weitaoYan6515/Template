@@ -15,9 +15,13 @@ import { get, post } from './http';
  * 最后通过export导出topics。
  */
 //admin ------api
-export const getADMIN={
-    //登录
-    login : params => post('/Login', params),
-    //修改
-    set : params => post('/UpdatePassword', params),
+export default {
+    getADMIN:{//登录
+        login : params => post('/Login', params),
+        //修改
+        set : params => post('/UpdatePassword', params)
+    },
+    getDATA:{
+        get: params => post('/Get', params),
+    }
 };

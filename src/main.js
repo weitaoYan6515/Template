@@ -18,6 +18,11 @@ Vue.use(ElementUI);
 // 引入store
 import store from './store'
 
+
+import api from './axios/api'
+Vue.prototype._api = api;
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -17,6 +17,9 @@ export default {
             navList:[{'name':'A',path:'/a'},{'name':'B',path:'/b'},{'name':'C',path:'/c'},{'name':'D',path:'/d'}]
         }
     },
+    mounted() {
+        console.log(this._api)
+    },
 }
 </script>
 
